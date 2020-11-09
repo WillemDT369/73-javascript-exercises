@@ -9,8 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
-
+(function generalinfo() {
+    var age = prompt("How old are you?");
+    var gender = prompt("What is your gender?");
+    var location = prompt("Where do you live?");
+    var info = confirm(age + " " + gender + " " + location);
+        if (info == true){
+            alert("nice, you did it!")
+            // return true
+        }
+        else{
+            generalinfo()
+        }
 })();

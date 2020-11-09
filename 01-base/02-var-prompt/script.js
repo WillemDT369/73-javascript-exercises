@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function(myfunction) {
+(function myfunction() {
 
     var name = prompt("please enter your name", "enter your name here");
     var greeting = "Hello "

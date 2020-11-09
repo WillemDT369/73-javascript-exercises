@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
-
-  // your code here
-
+  var question = prompt ("Do you want some cake?");
+  var yes = ("Congratulations, you're getting lots of cake");
+  var nocake = ("More cake for me then :p !");
+  if (question == "yes" ) {
+    alert(yes);
+  }
+  else {
+    alert(nocake)
+  }
 })();

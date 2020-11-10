@@ -14,17 +14,37 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+        var x = Number(document.getElementById("op-one").value); 
+        var y = Number(document.getElementById("op-two").value);
+        // without Number input = string, so 3 + 3 then = 33
+        var result = x + y;
+        alert(result)
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        // perform a substraction
+        var x = Number(document.getElementById("op-one").value); 
+        var y = Number(document.getElementById("op-two").value);
+        // without Number input = string
+        var result = x - y;
+        alert(result)
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
+        // perform a multiplication
+        var x = Number(document.getElementById("op-one").value); 
+        var y = Number(document.getElementById("op-two").value);
+        // without Number input = string
+        var result = x * y;
+        alert(result)
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        // perform an division
+        // perform a division
+        var x = Number(document.getElementById("op-one").value); 
+        var y = Number(document.getElementById("op-two").value);
+        // without Number input = string
+        var result = x / y;
+        alert(result)
     });
 })();

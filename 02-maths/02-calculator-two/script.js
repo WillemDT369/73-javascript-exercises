@@ -14,6 +14,34 @@
 
     const performOperation = operation => {
         // perform the operation
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
+        var result;
+        
+        switch(operation){
+
+            case("addition"):
+                result = x + y;
+                alert(result);
+                break;
+
+            case("substraction"):
+                result = x - y;
+                alert(result);
+                break;
+
+            case("multiplication"):
+                result = x * y;
+                alert(result);
+                break;
+
+            case("division"):
+                result = x / y;
+                alert(result);
+                break;
+        }
+
+        
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>

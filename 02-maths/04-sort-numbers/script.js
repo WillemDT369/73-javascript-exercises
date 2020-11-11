@@ -16,6 +16,22 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        
+        const numbers = document.getElementById("numbers").value;   // gets value from element with id "numbers"
+        const numberSeries = numbers.split(",");   // Splits string into array
+                                                   // Space between (", ") = what's left out after split
+                                                   // (", ") output = 2,4,10,14,16,23,90
+                                                   // (",")  output = 2, 4, 10, 14, 16, 23, 90
+        
+        
+        numberSeries.sort(function(a, b){
+            return a - b                           // return b - a = descending 
+        });
+        
+        document.getElementById("numbers").value = numberSeries;
+
+        console.log(numberSeries);
+
 
     });
 

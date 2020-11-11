@@ -11,10 +11,21 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function(){
 
         // your code here
 
-    });
+        var text = "";
+        var i;
+
+        for (i = 1; i < 22; i++) {
+
+            text = "The square of " + i + " is " + (i ** 2);     //Or Math.pow(i, 2);
+
+            alert(text);
+
+        }
+        
+  });
 
 })();

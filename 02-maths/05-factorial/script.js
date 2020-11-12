@@ -17,13 +17,14 @@
 
         // your code here
         let number = document.getElementById("number").value;
-        
-        function factorial(n) {
+
+        function factorial(n) { 
             return (n != 1) ? n * factorial(n - 1) : 1;
           }
           
-          document.getElementById("number").value = factorial(number);
-
+        document.getElementById("number").value = factorial(number);
+          console.log(factorial(number));
+        // }
     });
         
 })();

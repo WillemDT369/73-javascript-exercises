@@ -15,4 +15,15 @@
 
     // your code here
 
+    let date = new Date();
+    let hour = date.getHours();
+    document.getElementById("target").innerHTML = hour;
+
+        if(hour < 18){
+            document.getElementById("target").innerHTML = "Hello there!";
+        }
+        else{
+            document.getElementById("target").innerHTML = "Good evening!";
+        }
+
 })();

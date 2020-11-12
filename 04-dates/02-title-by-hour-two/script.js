@@ -15,4 +15,24 @@
 
     // your code here
 
+    //not fully functioning yet, check again
+
+    let date = new Date();
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+
+    // console.log(hour, minutes);
+
+        if(hour <= 17 && minutes <= 30){
+            document.getElementById("target").innerHTML = "Hello there!";
+        }
+        else{
+            document.getElementById("target").innerHTML = "Good evening!";
+        }
+
+    
+  
+
+
+
 })();

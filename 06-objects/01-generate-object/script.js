@@ -11,4 +11,24 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+
+    // create object willem with empty values
+    let objWillem = {
+        lastname: "",
+        firstname: "", 
+        age: "",
+        city: "", 
+        country: "", 
+    }
+    
+    objWillem.lastname = prompt("what's your last name?");
+    objWillem.firstname = prompt("what's your first name?");
+    objWillem.age = prompt("how old are you?");
+    objWillem.city = prompt("what city are you from?");
+    objWillem.country = prompt("which country do you live in?");
+    
+    console.log(objWillem);
+});
+
 })();

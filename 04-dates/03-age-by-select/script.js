@@ -9,8 +9,58 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+// (function() {
 
-    // your code here
+//     // doesn't fully function
 
+//     document.getElementById("run").addEventListener("click", function(){
+        
+//         let day = document.getElementById("dob-day").value;
+//         let month = document.getElementById("dob-month").value;
+//         let year = document.getElementById("dob-year").value;
+
+//         function calculate_age(dob) { 
+//             var diff_ms = Date.now() - dob.getTime();
+//             var age_dt = new Date(diff_ms); 
+            
+//             return Math.abs(age_dt.getUTCFullYear() - 1970);
+//         }
+
+//         alert(calculate_age(new Date(year, month, day)));
+
+        
+        
+
+//     });
+
+// })();
+
+
+(function () {
+
+    document.getElementById("run").addEventListener("click", function () {
+
+
+
+        let day = Number(document.getElementById("dob-day").value);
+        let month = Number(document.getElementById("dob-month").value) - 1;
+        let year = Number(document.getElementById("dob-year").value);
+        let today = new Date();
+        let yearToday = today.getFullYear();
+        let monthToday = today.getMonth();
+        let dayToday = today.getDate();
+
+        let age = yearToday - year;
+    
+
+        if (month >= monthToday && day > dayToday) {
+            age = age - 1 ;
+        }
+
+        else if (month > monthToday) {
+            age = age - 1 ;
+        }
+
+        alert("You are " + age + " years old.");
+    });
 })();

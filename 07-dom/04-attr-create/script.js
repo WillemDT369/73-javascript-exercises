@@ -19,6 +19,7 @@
         let targetElement = document.getElementById("target");
         // creating image tag
         let newElement = document.createElement("img");
+        // sets the value of the src attribute
         newElement.src = picture.getAttribute("data-image");
         // giving the img new id, not necessary
         newElement.id = "myKitty";
@@ -27,9 +28,6 @@
         // remove original kitty
         picture.remove();
         // maybe add some styling
-
-
-    
     }
     newImage();
 })();

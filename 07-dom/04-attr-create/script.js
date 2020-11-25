@@ -20,6 +20,7 @@
         // creating image tag
         let newElement = document.createElement("img");
         newElement.src = picture.getAttribute("data-image");
+        // giving the img new id, not necessary
         newElement.id = "myKitty";
         // adding new kitty
         targetElement.appendChild(newElement);

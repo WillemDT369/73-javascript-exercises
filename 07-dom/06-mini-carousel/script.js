@@ -21,6 +21,7 @@
 
 
     const image = document.querySelector("img");
+    // has to be outside the function
     let firstImg = 0;
     const lastImage = gallery.length - 1;
 
@@ -32,23 +33,9 @@
         } else {
             firstImg++;
         }
-
+        // should be here, not above "if" otherwise it shows the first img first and then starts counting
         image.src = gallery[firstImg];
     });
 
-    // let firstImg = document.getElementsByTagName("img")[0];
-    // let nextImg = 0;
-
-    // document.getElementById("next").onclick = () => {
-    //     if (nextImg === 4) {
-    //         nextImg = 0;
-    //     } else {
-    //         ++nextImg;
-    //     }
-    //     firstImg.src = gallery[nextImg];
-    // };
-
-
-    // your code here
 
 })();
